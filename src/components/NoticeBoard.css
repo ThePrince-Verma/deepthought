@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+  }
+  
+  .NoticeBoard {
+    display: flex;
+    background-color: #FDFDFD;
+    position: absolute;
+    top: 108px;
+    right: 0px;
+    z-index: 1000;
+    padding: 0;
+    height: 394px;
+    width: 95px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .left_selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure left_selection takes full height of NoticeBoard */
+    width: 50px;
+    background-color: #000000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  /* Make text and image cursor pointer */
+  .vertical-text1,
+  .vertical-text {
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .vertical-text1 {
+    display: flex;
+    flex-direction: column; /* Stack the letters vertically */
+    align-items: center; /* Center letters horizontally */
+    color: #FFFFFF;
+    position: relative;
+    bottom: 174px;
+    left: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for effects */
+  }
+  
+  .vertical-text {
+    display: flex;
+    flex-direction: column; /* Stack the letters vertically */
+    align-items: center; /* Center letters horizontally */
+    font-size: 16px;
+    color: #FDFDFD;
+    position: relative;
+    right: 16px;
+    top: 15px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  /* Hover effects */
+  .left_selection:hover .vertical-text {
+    color: #0029FF; /* Change text color on hover */
+  }
+  
+  .left_selection:hover .vertical-text1 img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    filter: brightness(1.2); /* Increase brightness on hover */
+  }
+  
+  /* Ensure the image inside vertical-text1 is responsive and fits well */
+  .vertical-text1 img {
+    width: 100%;
+    height: auto;
+  }
+  

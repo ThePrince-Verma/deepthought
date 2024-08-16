@@ -1,0 +1,43 @@
+.bottom {
+    position: relative;
+}
+
+.bottom1, .bottom2, .bottom3 {
+    position: absolute;
+}
+
+.bottom1 {
+    top: 1702px;
+    left: 1303px;
+}
+
+.bottom2 {
+    top: 1596px;
+    left: 1303px;
+}
+
+.bottom3 {
+    top: 1490px;
+    left: 1303px;
+}
+
+.image-container {
+    position: relative;
+    width: 100px; /* Adjust to the size of circle.png */
+    height: 100px; /* Adjust to the size of circle.png */
+}
+
+.circle {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust size relative to circle */
+    height: auto;
+    z-index: 1; /* Ensure it appears above the circle */
+}
